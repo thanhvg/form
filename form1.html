@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Coin machine</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-2.2.3.min.js"></script>
+    <script src="script1.js"></script>
+</head>
+
+<body>
+
+    <form action="#">
+        <header>
+            <h2>Coin machine</h2>
+            <div>Coin machine insert money, for example 12.27</div>
+        </header>
+
+        <div class="row">
+            <label class="desc col-4" id="lblMoney" for="money">Insert money</label>
+            <div class="col-8">
+                <input id="money" name="money" type="text" class="field text fn" value="" size="8" tabindex="1">
+            </div>
+        </div>
+        <div class="row">
+          <p id="answer"> </p>
+
+        </div>
+
+           <div class="row">
+                <div class="desc col-4">
+                    <input id="getCoins" name="getCoins" type="submit" value="Submit" tabindex="2" onclick="calCoin();">
+                </div>
+            </div>
+
+    </form>
+
+</body>
+
+</html>
